@@ -1,0 +1,27 @@
+{
+  "name": "typescript-getting-started",
+  "version": "1.0.0",
+  "description": "A sample TypeScript app using Express",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "node .",
+    "build": "tsc",
+    "start:dev": "nodemon"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/express": "^4.17.3",
+    "@types/node": "^12.12.31",
+    "nodemon": "^2.0.2",
+    "typescript": "^3.8.3"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "nodemonConfig": {
+    "ext": "ts",
+    "exec": "npm run build && npm start"
+  }
+}
