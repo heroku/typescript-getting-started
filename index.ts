@@ -2,7 +2,6 @@ import express from 'express';
 import path from 'path';
 
 const PORT = process.env.PORT || 5000;
-const server = express();
 
 express()
   .use(express.static(path.join(__dirname, '../public')))
